@@ -3,6 +3,7 @@
     public class Producto
     {
         public required string Nombre { get; set; }
+        public required string Categoria { get; set; }
         public required string UrlImagen { get; set; }
         public decimal Precio { get; set; }
 

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AppLucas")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5da0821418b4df97b8914b708e82c0d251706256")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3467d160a31767a0ef571faa0d9516d7731596ce")]
 [assembly: System.Reflection.AssemblyProductAttribute("AppLucas")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AppLucas")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

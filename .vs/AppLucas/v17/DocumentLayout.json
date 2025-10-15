@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\zumst\\Documents\\Mis_Proyectos\\RepostGitSubir\\AppComidaLucas\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E9876A76-6941-4F03-8888-8D5D112F1FA1}|AppLucas\\AppLucas.csproj|c:\\users\\zumst\\documents\\mis_proyectos\\repostgitsubir\\appcomidalucas\\applucas\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E9876A76-6941-4F03-8888-8D5D112F1FA1}|AppLucas\\AppLucas.csproj|solutionrelative:applucas\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E9876A76-6941-4F03-8888-8D5D112F1FA1}|AppLucas\\AppLucas.csproj|c:\\users\\zumst\\documents\\mis_proyectos\\repostgitsubir\\appcomidalucas\\applucas\\views\\productos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{E9876A76-6941-4F03-8888-8D5D112F1FA1}|AppLucas\\AppLucas.csproj|solutionrelative:applucas\\views\\productos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E9876A76-6941-4F03-8888-8D5D112F1FA1}|AppLucas\\AppLucas.csproj|c:\\users\\zumst\\documents\\mis_proyectos\\repostgitsubir\\appcomidalucas\\applucas\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{E9876A76-6941-4F03-8888-8D5D112F1FA1}|AppLucas\\AppLucas.csproj|solutionrelative:applucas\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9876A76-6941-4F03-8888-8D5D112F1FA1}|AppLucas\\AppLucas.csproj|c:\\users\\zumst\\documents\\mis_proyectos\\repostgitsubir\\appcomidalucas\\applucas\\wwwroot\\data\\productos.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E9876A76-6941-4F03-8888-8D5D112F1FA1}|AppLucas\\AppLucas.csproj|solutionrelative:applucas\\wwwroot\\data\\productos.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9876A76-6941-4F03-8888-8D5D112F1FA1}|AppLucas\\AppLucas.csproj|c:\\users\\zumst\\documents\\mis_proyectos\\repostgitsubir\\appcomidalucas\\applucas\\views\\pedido\\finalizar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E9876A76-6941-4F03-8888-8D5D112F1FA1}|AppLucas\\AppLucas.csproj|solutionrelative:applucas\\views\\pedido\\finalizar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9876A76-6941-4F03-8888-8D5D112F1FA1}|AppLucas\\AppLucas.csproj|c:\\users\\zumst\\documents\\mis_proyectos\\repostgitsubir\\appcomidalucas\\applucas\\models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9876A76-6941-4F03-8888-8D5D112F1FA1}|AppLucas\\AppLucas.csproj|solutionrelative:applucas\\models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,43 +30,69 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\zumst\\Documents\\Mis_Proyectos\\RepostGitSubir\\AppComidaLucas\\AppLucas\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "AppLucas\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\zumst\\Documents\\Mis_Proyectos\\RepostGitSubir\\AppComidaLucas\\AppLucas\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "AppLucas\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAkAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "Finalizar.cshtml",
+              "DocumentMoniker": "C:\\Users\\zumst\\Documents\\Mis_Proyectos\\RepostGitSubir\\AppComidaLucas\\AppLucas\\Views\\Pedido\\Finalizar.cshtml",
+              "RelativeDocumentMoniker": "AppLucas\\Views\\Pedido\\Finalizar.cshtml",
+              "ToolTip": "C:\\Users\\zumst\\Documents\\Mis_Proyectos\\RepostGitSubir\\AppComidaLucas\\AppLucas\\Views\\Pedido\\Finalizar.cshtml",
+              "RelativeToolTip": "AppLucas\\Views\\Pedido\\Finalizar.cshtml",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAAD8AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-15T17:28:35.113Z",
+              "WhenOpened": "2025-10-15T17:43:53.614Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "productos.json",
+              "DocumentMoniker": "C:\\Users\\zumst\\Documents\\Mis_Proyectos\\RepostGitSubir\\AppComidaLucas\\AppLucas\\wwwroot\\data\\productos.json",
+              "RelativeDocumentMoniker": "AppLucas\\wwwroot\\data\\productos.json",
+              "ToolTip": "C:\\Users\\zumst\\Documents\\Mis_Proyectos\\RepostGitSubir\\AppComidaLucas\\AppLucas\\wwwroot\\data\\productos.json",
+              "RelativeToolTip": "AppLucas\\wwwroot\\data\\productos.json",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAswCsAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-15T17:36:05.191Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Producto.cs",
+              "DocumentMoniker": "C:\\Users\\zumst\\Documents\\Mis_Proyectos\\RepostGitSubir\\AppComidaLucas\\AppLucas\\Models\\Producto.cs",
+              "RelativeDocumentMoniker": "AppLucas\\Models\\Producto.cs",
+              "ToolTip": "C:\\Users\\zumst\\Documents\\Mis_Proyectos\\RepostGitSubir\\AppComidaLucas\\AppLucas\\Models\\Producto.cs",
+              "RelativeToolTip": "AppLucas\\Models\\Producto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T17:35:29.432Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\zumst\\Documents\\Mis_Proyectos\\RepostGitSubir\\AppComidaLucas\\AppLucas\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "AppLucas\\Views\\Shared\\_Layout.cshtml",
               "ToolTip": "C:\\Users\\zumst\\Documents\\Mis_Proyectos\\RepostGitSubir\\AppComidaLucas\\AppLucas\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "AppLucas\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAuwEAAAABCAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-10-15T17:25:54.316Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\zumst\\Documents\\Mis_Proyectos\\RepostGitSubir\\AppComidaLucas\\AppLucas\\Views\\Productos\\Index.cshtml",
               "RelativeDocumentMoniker": "AppLucas\\Views\\Productos\\Index.cshtml",
               "ToolTip": "C:\\Users\\zumst\\Documents\\Mis_Proyectos\\RepostGitSubir\\AppComidaLucas\\AppLucas\\Views\\Productos\\Index.cshtml",
               "RelativeToolTip": "AppLucas\\Views\\Productos\\Index.cshtml",
-              "ViewState": "AgIAAKkAAAAAAAAAAAAAAMQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAHgAAAAAAAAAAAAwwIYAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-10-15T17:24:44.872Z",
               "EditorCaption": ""

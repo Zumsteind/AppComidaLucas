@@ -77,19 +77,22 @@
 
 <div class="menu-bar">
     <div class="d-flex justify-content-center overflow-auto py-2" style="white-space: nowrap;">
-        <a href="#" class="menu-item me-4">Todos</a>
-        <a href="#" class="menu-item me-4">Sushi</a>
-        <a href="#" class="menu-item me-4">Rolls</a>
-        <a href="#" class="menu-item me-4">Bebidas</a>
-        <a href="#" class="menu-item me-4">Postres</a>
-        <a href="#" class="menu-item me-4">Ofertas</a>
+        <a href="#todos" class="menu-item me-4">Todos</a>
+        <a href="#sushi" class="menu-item me-4">Sushi</a>
+        <a href="#rolls" class="menu-item me-4">Rolls</a>
+        <a href="#bebidas" class="menu-item me-4">Bebidas</a>
+        <a href="#postres" class="menu-item me-4">Postres</a>
+        <a href="#ofertas" class="menu-item me-4">Ofertas</a>
     </div>
 </div>
 
-<h2 class="text-center mb-4">Menú</h2>
+<br />
+<br />
+<h2 class="text-center mb-4" id="sushi">Sushi</h2>
+<hr />
 
 <div class="row" id="listaProductos">
-    @foreach (var p in Model)
+    @foreach (var p in Model.Where(p => p.Categoria == "Sushi"))
     {
         <div class="col-md-4 mb-4">
             <div class="card h-100 shadow-sm">
@@ -110,6 +113,49 @@
                             <strong>Precio:</strong>
                             @p.Precio
                                         }
+                    </p>
+
+                    @if (p.Disponible)
+                    {
+                        <button class="btn btn-primary"
+                                onclick="abrirModal('@p.Nombre', @p.Precio, '@p.UrlImagen', @p.Descuento)">
+                            Añadir
+                        </button>
+                    }
+                    else
+                    {
+                        <button class="btn btn-secondary" disabled>No disponible</button>
+                    }
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+<h2 class="text-center mb-4" id="bebidas">Bebidas</h2>
+
+<div class="row" id="listaProductos">
+    @foreach (var p in Model.Where(p => p.Categoria == "Bebidas"))
+    {
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm">
+                <img src="@p.UrlImagen" class="card-img-top producto-img" alt="@p.Nombre" />
+                <div class="card-body text-center">
+                    <h5 class="card-title">@p.Nombre</h5>
+                    <p class="card-text">
+                        @if (p.Descuento > 0)
+                        {
+                            <strong>Precio:</strong>
+                            <span class="text-decoration-line-through text-muted">$@p.Precio</span>
+                            <br />
+                            <span class="fw-bold">$@(p.Precio - (p.Precio * p.Descuento / 100))</span>
+                            <span class="badge bg-danger ms-2">-@p.Descuento%</span>
+                        }
+                        else
+                        {
+                            <strong>Precio:</strong>
+                            @p.Precio
+                        }
                     </p>
 
                     @if (p.Disponible)
@@ -204,7 +250,7 @@
         let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
         let productoActual = {};
 
-               function abrirModal(nombre, precio, imagen, descuento = 0) {
+            function abrirModal(nombre, precio, imagen, descuento = 0) {
             let precioConDescuento = descuento > 0 ? precio - (precio * descuento / 100) : precio;
 
             productoActual = { nombre, precio: precioConDescuento, imagen };
@@ -252,18 +298,58 @@
             // Actualizar el badge en el layout
             document.getElementById('carrito-cantidad').textContent = totalCantidad;
         }
-        function actualizarResumen() {
+
+        // function actualizarResumen() {
+        //     if (carrito.length === 0) {
+        //         document.getElementById('resumenCarrito').innerText = 'Carrito vacío';
+        //         return;
+        //     }
+
+        //     let total = 0;
+        //     carrito.forEach(p => total += p.precio * p.cantidad);
+
+        //     document.getElementById('resumenCarrito').innerText =
+        //         `🛒 ${carrito.length} productos - Total: $${total.toFixed(2)}`;
+        // }
+
+                function actualizarResumen() {
+            const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+
             if (carrito.length === 0) {
                 document.getElementById('resumenCarrito').innerText = 'Carrito vacío';
                 return;
             }
 
             let total = 0;
-            carrito.forEach(p => total += p.precio * p.cantidad);
+            let totalItems = 0;
+
+            carrito.forEach(p => {
+                total += p.precio * p.cantidad;
+                totalItems += p.cantidad;
+            });
 
             document.getElementById('resumenCarrito').innerText =
-                `🛒 ${carrito.length} productos - Total: $${total.toFixed(2)}`;
+                `🛒 ${totalItems} productos - Total: $${total.toFixed(2)}`;
         }
+
+        //     function agregarAlCarrito() {
+        // let cantidad = parseInt(document.getElementById('cantidadProducto').value);
+        // let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+
+        // // Verificar si el producto ya existe en el carrito
+        // const productoExistente = carrito.find(p => p.nombre === productoActual.nombre);
+
+        // if (productoExistente) {
+        //     // Si ya existe, sumamos la cantidad
+        //     productoExistente.cantidad += cantidad;
+        // } else {
+        //     // Si no existe, lo agregamos
+        //     carrito.push({
+        //         nombre: productoActual.nombre,
+        //         precio: productoActual.precio,
+        //         cantidad: cantidad
+        //     });
+        // }
 
         function enviarPorWhatsApp() {
             if (carrito.length === 0) {
