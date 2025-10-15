@@ -1,0 +1,84 @@
+﻿@model List<AppLucas.Models.ProductoCarrito>
+
+<h2 class="text-center mb-4">Detalle del Pedido</h2>
+<div id="detalleCarrito" class="container"></div>
+<button id="btnEnviarWhatsApp" class="btn btn-success mt-3">Enviar pedido por WhatsApp</button>
+
+@section Scripts {
+    <script>
+        // Recuperar carrito del navegador
+        let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+
+        function mostrarCarrito() {
+            const contenedor = document.getElementById('detalleCarrito');
+
+            if (carrito.length === 0) {
+                contenedor.innerHTML = "<p>Carrito vacío</p>";
+                document.getElementById('btnEnviarWhatsApp').disabled = true;
+                return;
+            }
+
+            let html = `<table class="table table-dark table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Producto</th>
+                                    <th>Cantidad</th>
+                                    <th>Precio unitario</th>
+                                    <th>Subtotal</th>
+                                    <th>Acción</th>
+                                </tr>
+                            </thead>
+                            <tbody>`;
+            let total = 0;
+            carrito.forEach((p, index) => {
+                let subtotal = p.precio * p.cantidad;
+                total += subtotal;
+                html += `<tr>
+                            <td>${p.nombre}</td>
+                            <td>${p.cantidad}</td>
+                            <td>$${p.precio}</td>
+                            <td>$${subtotal}</td>
+                            <td>
+                                <button class="btn btn-danger btn-sm" onclick="eliminarProducto(${index})">
+                                    Eliminar
+                                </button>
+                            </td>
+                        </tr>`;
+            });
+            html += `</tbody></table>
+                     <h4>Total: $${total}</h4>`;
+
+            contenedor.innerHTML = html;
+            document.getElementById('btnEnviarWhatsApp').disabled = false;
+        }
+
+               function eliminarProducto(index) {
+            carrito.splice(index, 1);
+            localStorage.setItem('carrito', JSON.stringify(carrito));
+            mostrarCarrito();
+
+            // Actualizar badge en el layout
+            if (typeof actualizarBadgeCarrito === "function") {
+                actualizarBadgeCarrito();
+            }
+        }
+
+        mostrarCarrito();
+
+        // Enviar por WhatsApp
+        document.getElementById('btnEnviarWhatsApp').addEventListener('click', function () {
+            if (carrito.length === 0) return;
+
+            let mensaje = "Hola! Quiero hacer el siguiente pedido:%0A";
+            carrito.forEach(p => {
+                mensaje += `- ${p.nombre} x${p.cantidad} ($${p.precio * p.cantidad})%0A`;
+            });
+
+            let total = carrito.reduce((acc, p) => acc + p.precio * p.cantidad, 0);
+            mensaje += `%0ATotal: $${total}`;
+
+            let numero = "5491134520207"; // Número del local
+            window.open(`https://wa.me/${numero}?text=${mensaje}`, "_blank");
+        });
+    </script>
+}

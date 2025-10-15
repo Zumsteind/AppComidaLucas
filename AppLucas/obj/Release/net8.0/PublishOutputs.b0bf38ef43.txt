@@ -1,0 +1,7 @@
+C:\Users\zumst\Documents\Mis_Proyectos\AppLucas\publish\AppLucas.exe
+C:\Users\zumst\Documents\Mis_Proyectos\AppLucas\publish\appsettings.Development.json
+C:\Users\zumst\Documents\Mis_Proyectos\AppLucas\publish\appsettings.json
+C:\Users\zumst\Documents\Mis_Proyectos\AppLucas\publish\AppLucas.dll
+C:\Users\zumst\Documents\Mis_Proyectos\AppLucas\publish\AppLucas.deps.json
+C:\Users\zumst\Documents\Mis_Proyectos\AppLucas\publish\AppLucas.runtimeconfig.json
+C:\Users\zumst\Documents\Mis_Proyectos\AppLucas\publish\AppLucas.pdb

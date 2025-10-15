@@ -1,0 +1,44 @@
+[
+  {
+    "Nombre": "30 piezas",
+    "UrlImagen": "https://www.shutterstock.com/image-photo/japanese-sushi-food-maki-ands-600nw-1470615731.jpg",
+    "Precio": 50400,
+    "Descuento": 30,
+    "Disponible": true
+  },
+  {
+    "Nombre": "Niguiri Salmón",
+    "UrlImagen": "https://media.istockphoto.com/id/1397571502/es/foto/salm%C3%B3n-sushi-en-un-plato-negro-sobre-la-vista-azul-de-la-mesa-de-hormig%C3%B3n.jpg?s=612x612&w=0&k=20&c=eyG88jtKxPCZXfqByyLZhkDB0sgGhYUg-CUbAWHkpWw=",
+    "Precio": 7500,
+    "Descuento": 0,
+    "Disponible": true
+  },
+  {
+    "Nombre": "Tamago Pasión",
+    "UrlImagen": "https://www.sushisake.com.ar/wp-content/uploads/2021/09/tamago-pasion.jpg",
+    "Precio": 7500,
+    "Descuento": 0,
+    "Disponible": false
+  },
+  {
+    "Nombre": "Niguiri Salmón",
+    "UrlImagen": "https://media.istockphoto.com/id/1397571502/es/foto/salm%C3%B3n-sushi-en-un-plato-negro-sobre-la-vista-azul-de-la-mesa-de-hormig%C3%B3n.jpg?s=612x612&w=0&k=20&c=eyG88jtKxPCZXfqByyLZhkDB0sgGhYUg-CUbAWHkpWw=",
+    "Precio": 7500,
+    "Descuento": 0,
+    "Disponible": true
+  },
+  {
+    "Nombre": "30 piezas",
+    "UrlImagen": "https://www.shutterstock.com/image-photo/japanese-sushi-food-maki-ands-600nw-1470615731.jpg",
+    "Precio": 50400,
+    "Descuento": 30,
+    "Disponible": true
+  },
+  {
+    "Nombre": "30 piezas",
+    "UrlImagen": "https://www.shutterstock.com/image-photo/japanese-sushi-food-maki-ands-600nw-1470615731.jpg",
+    "Precio": 50400,
+    "Descuento": 30,
+    "Disponible": true
+  }
+]
