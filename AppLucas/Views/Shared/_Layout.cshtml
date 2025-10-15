@@ -45,12 +45,38 @@
 </body>
 </html>
 <script>
-    function actualizarBadgeCarrito() {
+    // function actualizarBadgeCarrito() {
+    //     const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+    //     const totalCantidad = carrito.reduce((sum, producto) => sum + producto.cantidad, 0);
+    //     const badge = document.getElementById('carrito-cantidad');
+    //     if (badge) {
+    //         badge.textContent = totalCantidad;
+    //     }
+    // }
+
+        function actualizarBadgeCarrito() {
+        // Recuperar carrito de localStorage
         const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+
+        // Sumar todas las cantidades para el badge
         const totalCantidad = carrito.reduce((sum, producto) => sum + producto.cantidad, 0);
+
+        // Actualizar badge en el navbar
         const badge = document.getElementById('carrito-cantidad');
         if (badge) {
             badge.textContent = totalCantidad;
+        }
+
+        // Actualizar resumen en la barra inferior
+        const resumen = document.getElementById('resumenCarrito');
+        if (resumen) {
+            if (carrito.length === 0) {
+                resumen.textContent = 'Carrito vacío';
+            } else {
+                // Calcular total del carrito
+                const totalPrecio = carrito.reduce((sum, producto) => sum + (producto.precio * producto.cantidad), 0);
+                resumen.textContent = `🛒 ${carrito.length} productos - Total: $${totalPrecio.toFixed(2)}`;
+            }
         }
     }
 
