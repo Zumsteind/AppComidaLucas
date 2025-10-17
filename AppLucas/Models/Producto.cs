@@ -2,11 +2,11 @@
 {
     public class Producto
     {
-        public required string Nombre { get; set; }
-        public required string Categoria { get; set; }
-        public required string UrlImagen { get; set; }
+        public int Id { get; set; }
+        public string Nombre { get; set; } = string.Empty;
+        public string Categoria { get; set; } = string.Empty;
+        public string UrlImagen { get; set; } = string.Empty;
         public decimal Precio { get; set; }
-
         public decimal Descuento { get; set; }
         public bool Disponible { get; set; }
     }
